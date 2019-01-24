@@ -77,3 +77,5 @@ let difficultSpelling = "Mississippi";
 let myRegex = /s+/g;
 let result = difficultSpelling.match(myRegex);
 console.log(result);
+
+/*D25 100DaysOfCode & D23 301DaysOfCode */
