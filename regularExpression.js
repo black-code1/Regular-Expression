@@ -2,7 +2,7 @@
 
 // Regular Expressions: Using the Test Method
 // let myString = "Hello, World";
-let myRegex = /Hello/;
+// let myRegex = /Hello/;
 // let result = myRegex.test(myString);
 // console.log(result);
 
@@ -50,11 +50,30 @@ let vowelRegex = /[aeiou]/gi;
 // console.log(result);
 
 // Regular Expressions: Match Letters of the Alphabet
-let quoteSample = "The quick brown fox jumps over the lazy dog.";
+// let quoteSample = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/gi;
 // let result = quoteSample.match(alphabetRegex);
 // console.log(result);
 
-/*D22 100DaysOfCode & D21 301DaysOfCode */
+/*D22 & D23 100DaysOfCode & D21 301DaysOfCode */
+//Learning something else out of freecodecamp, still on javascript
+
+/*D24 100DaysOfCode & D21 301DaysOfCode */
 
 // Regular Expressions: Match Numbers and Letters of the Alphabet
+// let quoteSample = "BLueberry 3.141592653s are delicious.";
+// let myRegex = /[h-s2-6]/gi;
+// let result = quoteSample.match(myRegex);
+// console.log(result);
+
+// Regular Expressions: Match Single Characters Not Specified
+let quoteSample = "3 blind mice.";
+// let myRegex = /[^aeioy^0-99]/gi;
+// let result = quoteSample.match(myRegex);
+// console.log(result);
+
+// Regular Expressions: Match Characters that Occur One or More Times
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g;
+let result = difficultSpelling.match(myRegex);
+console.log(result);
