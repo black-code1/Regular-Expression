@@ -74,8 +74,42 @@ let quoteSample = "3 blind mice.";
 
 // Regular Expressions: Match Characters that Occur One or More Times
 let difficultSpelling = "Mississippi";
-let myRegex = /s+/g;
-let result = difficultSpelling.match(myRegex);
-console.log(result);
+// let myRegex = /s+/g;
+// let result = difficultSpelling.match(myRegex);
+// console.log(result);
 
-/*D25 100DaysOfCode & D23 301DaysOfCode */
+/*D25 100DaysOfCode & D24 301DaysOfCode */
+
+/*D26 100DaysOfCode & D25 301DaysOfCode */
+
+//Regular Expressions:Match Characters that Occur Zero or More Times
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/;
+// let result = chewieQuote.match(chewieRegex);
+// console.log(result);
+
+//Regular Expressions:Find Characters with Lazy Matching
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<h1>?/;
+// let result = text.match(myRegex);
+// console.log(result);
+
+//Regular Expressions:Find One or More Criminal in a Hunt
+let crowd = "P1P2P3P4P5P6CCCP7P8P9";
+let reCriminals = /C+/g;
+// let matchedCriminals = crowd.match(reCriminals);
+// console.log(matchedCriminals);
+
+//Regular Expressions:Match Beginnig String Patterns
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/;
+// let result = calRegex.test(rickyAndCal);
+// console.log(result);
+
+/*D27 100DaysOfCode & D26 301DaysOfCode */
+
+//Regular Expressions:Match Ending String Patterns
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/;
+let result = lastRegex.test(caboose);
+console.log(result);
