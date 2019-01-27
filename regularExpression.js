@@ -67,7 +67,7 @@ let alphabetRegex = /[a-z]/gi;
 // console.log(result);
 
 // Regular Expressions: Match Single Characters Not Specified
-let quoteSample = "3 blind mice.";
+// let quoteSample = "3 blind mice.";
 // let myRegex = /[^aeioy^0-99]/gi;
 // let result = quoteSample.match(myRegex);
 // console.log(result);
@@ -111,5 +111,59 @@ let calRegex = /^Cal/;
 //Regular Expressions:Match Ending String Patterns
 let caboose = "The last car on a train is the caboose";
 let lastRegex = /caboose$/;
-let result = lastRegex.test(caboose);
-console.log(result);
+// let result = lastRegex.test(caboose);
+// console.log(result);
+
+//Regular Expressions:Match All Letters and Numbers
+// let quoteSample = " the five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g;
+// let result = quoteSample.match(alphabetRegexV2).length;
+// console.log(result);
+
+//Regular Expressions:Match Everything But Letters and Numbers
+let quoteSample = " the five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g;
+// let result = quoteSample.match(nonAlphabetRegex).length;
+// console.log(result);
+
+//Regular Expressions:Match All Numbers
+// let numString = "Your sandwich will be $5.00";
+let numRegex = /\d/g;
+// let result = numString.match(numRegex).length;
+// console.log(result);
+
+//Regular Expressions:Match All Non-Numbers
+let numString = "Your sandwich will be $5.00";
+let noNumRegex = /\D/g;
+// let result = numString.match(noNumRegex).length;
+// console.log(result);
+
+//Regular Expressions:Restrict Possible Usernames
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z]{2,}\d*$/i;
+// let result = userCheck.test(username);
+// console.log(result);
+
+/*D28 100DaysOfCode & D27 301DaysOfCode */
+
+//Regular Expressions:Match Whitespace
+
+//Regular Expressions:Match Non-Whitespace Characters
+
+//Regular Expressions:Specify Upper and Lower Number of Matches
+
+//Regular Expressions:Specify Only the Lower Number of Matches
+
+//Regular Expressions:Specify Exact Number of Matches
+
+/*D29 100DaysOfCode & D28 301DaysOfCode */
+
+//Regular Expressions:Check for All or None
+
+//Regular Expressions:Positive and Negative Lookahead
+
+//Regular Expressions:Reuse Patterns Using Capture Groups
+
+//Regular Expressions:Use Capture Groups to Search and Replace
+
+//Regular Expressions:Remove Whitespace from Start and End
