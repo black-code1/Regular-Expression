@@ -147,23 +147,64 @@ let userCheck = /^[a-z]{2,}\d*$/i;
 /*D28 100DaysOfCode & D27 301DaysOfCode */
 
 //Regular Expressions:Match Whitespace
+let sample = "whitespace is important in separating words";
+let countWhiteSpace = /\s/g;
+// let result = sample.match(countWhiteSpace);
+// console.log(result);
 
 //Regular Expressions:Match Non-Whitespace Characters
+sample = "Whispace is important in separating words";
+let countNonWhiteSpace = /\S/g;
+let result = sample.match(countNonWhiteSpace);
+// console.log(result);
 
 //Regular Expressions:Specify Upper and Lower Number of Matches
+let ohStr = "Ohhh no";
+let ohRegex = /oh{3,6}\sno/i;
+result = ohRegex.test(ohStr);
+// console.log(result);
 
 //Regular Expressions:Specify Only the Lower Number of Matches
+let haStr = "Hazzzzah";
+let haRegex = /haz{4,}ah/i;
+result = haRegex.test(haStr);
+// console.log(result);
 
 //Regular Expressions:Specify Exact Number of Matches
-
-/*D29 100DaysOfCode & D28 301DaysOfCode */
+let timStr = "Timmmmber";
+let timRegex = /tim{4}ber/i;
+result = timRegex.test(timStr);
+// console.log(result);
 
 //Regular Expressions:Check for All or None
+let favWord = "favorite";
+let favRegex = /favou?rite/;
+result = favRegex.test(favWord);
+// console.log(result);
 
 //Regular Expressions:Positive and Negative Lookahead
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{5,})(?=\D*\d{2})/;
+result = pwRegex.test(sampleWord);
+// console.log(result);
 
 //Regular Expressions:Reuse Patterns Using Capture Groups
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/;
+result = reRegex.test(repeatNum);
+// console.log(result);
 
 //Regular Expressions:Use Capture Groups to Search and Replace
+let huhText = "This sandwich is good.";
+let fixRegex = /good/;
+let replaceText = "okey-dokey";
+result = huhText.replace(fixRegex, replaceText);
+// console.log(result);
 
 //Regular Expressions:Remove Whitespace from Start and End
+let hello = "  Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g;
+result = hello.replace(wsRegex, "");
+console.log(result);
+
+/*Regular Expressions End*/
